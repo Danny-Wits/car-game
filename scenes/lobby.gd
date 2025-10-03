@@ -5,12 +5,14 @@ var peer:ENetMultiplayerPeer = ENetMultiplayerPeer.new()
 @onready var name_input: LineEdit = $UI/NameInput
 
 func _on_host_pressed() -> void:
+	Global.player_name = name_input.text.strip_edges()
 	if peer.create_server(PORT) !=OK:
 		print("Server not Created")
 		return
 	move_to_map()
 	
 func _on_join_pressed() -> void:
+	Global.player_name = name_input.text.strip_edges()
 	var ip = ip_input.text.strip_edges()
 	if ip.length()==0:
 		ip="127.0.0.1"

@@ -11,6 +11,7 @@ func _ready() -> void:
 	$SpringArm3D/Camera3D.current=is_multiplayer_authority()
 	set_physics_process(is_multiplayer_authority())
 # Called every frame. 'delta' is the elapsed time since the previous frame.
+
 func _physics_process(delta: float) -> void:
 	steering = move_toward(steering,Input.get_axis("right","left")*ster_angle,delta*3.5)
 		
@@ -22,3 +23,15 @@ func _physics_process(delta: float) -> void:
 	
 	else:
 		engine_force/=1.2
+		
+	if Input.is_action_just_pressed("shoot"):
+		print("shoot pressed")
+		shoot_bullet()
+
+
+func shoot_bullet():
+	const BULLET_3D = preload("res://scenes/fire_ball/bullet_3d.tscn")
+	var new_bullet = BULLET_3D.instantiate()
+	$Marker3D.add_child(new_bullet)
+	
+	new_bullet.global_transform =$Marker3D.global_transform
