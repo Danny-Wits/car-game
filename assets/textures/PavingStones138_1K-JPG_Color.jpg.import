@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8ghgk0vd1nsw"
-path.s3tc="res://.godot/imported/PavingStones138_1K-JPG_NormalGL.jpg-aae9eba0746f21a176b2d5e58edc4f4a.s3tc.ctex"
+uid="uid://ygwuftleelam"
+path.s3tc="res://.godot/imported/PavingStones138_1K-JPG_Color.jpg-334a83c847d4c1579d0d5716547c9f2f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://PavingStones138_1K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/PavingStones138_1K-JPG_NormalGL.jpg-aae9eba0746f21a176b2d5e58edc4f4a.s3tc.ctex"]
+source_file="res://assets/textures/PavingStones138_1K-JPG_Color.jpg"
+dest_files=["res://.godot/imported/PavingStones138_1K-JPG_Color.jpg-334a83c847d4c1579d0d5716547c9f2f.s3tc.ctex"]
 
 [params]
 
@@ -22,12 +22,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://PavingStones138_1K-JPG_NormalGL.jpg"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
