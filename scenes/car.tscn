@@ -15,7 +15,7 @@ _surfaces = [{
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x31a8"]
-size = Vector3(1.7443848, 1.6516113, 2.9225159)
+size = Vector3(1.7443848, 1.6516113, 2.64534)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x31a8"]
 albedo_color = Color(0.33660764, 0.3366076, 0.3366076, 1)
@@ -59,7 +59,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.17850673, 0)
 mesh = SubResource("ArrayMesh_3wmsh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03479004, 0.7325839, 0.20570374)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.03479004, 0.7325839, 0.06711578)
 shape = SubResource("BoxShape3D_x31a8")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="."]
@@ -96,10 +96,10 @@ use_as_traction = true
 transform = Transform3D(-4.3711385e-08, -0.10316157, 0, 0.99999994, -4.5093356e-09, 0, 0, 0, 1, 0, 0, 0)
 mesh = SubResource("CylinderMesh_3wmsh")
 
+[node name="Marker3D" type="Marker3D" parent="."]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.012379527, 1.363923, 1.6607851)
+
 [node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
 replication_config = SubResource("SceneReplicationConfig_x31a8")
 visibility_update_mode = 1
 script = ExtResource("2_qt2eu")
-
-[node name="Marker3D" type="Marker3D" parent="."]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.012379527, 1.363923, 1.3113147)
