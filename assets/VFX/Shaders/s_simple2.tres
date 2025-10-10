@@ -36,9 +36,9 @@ keep_scale = true
 
 [resource]
 code = "shader_type spatial;
-render_mode blend_mix, depth_draw_opaque, cull_disabled, diffuse_lambert, specular_schlick_ggx, unshaded;
+render_mode blend_mix, depth_draw_opaque, depth_test_default, cull_disabled, diffuse_lambert, specular_schlick_ggx, unshaded;
 
-uniform float Outline : hint_range(0, 1) = 0.85000002384186;
+uniform float Outline : hint_range(0.0, 1.0) = 0.85000002384186;
 uniform sampler2D Hit_texture : source_color;
 
 

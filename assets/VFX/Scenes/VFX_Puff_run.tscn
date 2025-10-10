@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://ccdifaij7iykp"]
 
-[ext_resource type="Shader" uid="uid://cbctxpf3ajcpc" path="res://VFX/Shaders/s_puff.tres" id="1_6vebj"]
-[ext_resource type="Texture2D" uid="uid://4yxd0gw486dx" path="res://VFX/Textures/T_PerlinNoise_Tiled.png" id="2_in4ho"]
+[ext_resource type="Shader" uid="uid://cbctxpf3ajcpc" path="res://assets/VFX/Shaders/s_puff.tres" id="1_6vebj"]
+[ext_resource type="Texture2D" uid="uid://4yxd0gw486dx" path="res://assets/VFX/Textures/T_PerlinNoise_Tiled.png" id="2_in4ho"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bx2os"]
 render_priority = 0
 shader = ExtResource("1_6vebj")
-shader_parameter/Proximity_Fade = 0.5
 shader_parameter/Vertex_Noise = ExtResource("2_in4ho")
+shader_parameter/Proximity_Fade = 0.5
 
 [sub_resource type="Curve" id="Curve_mkfny"]
 _data = [Vector2(0.521739, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
