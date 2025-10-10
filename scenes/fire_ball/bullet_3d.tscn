@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ba7wjkme2r5v1" path="res://scenes/fire_ball/projectile_3d.tscn" id="1_ri8cd"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_ys4u8"]
-radius = 0.119845
+radius = 0.1
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_8exth"]
 
