@@ -49,11 +49,6 @@ outline_modulate = Color(0, 0, 0, 0)
 font_size = 60
 uppercase = true
 
-[node name="SpringArm3D" type="SpringArm3D" parent="."]
-transform = Transform3D(-0.9986739, 0, 0.051481783, 0, 1, 0, -0.051481783, 0, -0.9986739, 0, 4.6334343, -6.6643033)
-
-[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
-
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.17850673, 0)
 mesh = SubResource("ArrayMesh_3wmsh")
@@ -103,3 +98,6 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.01
 replication_config = SubResource("SceneReplicationConfig_x31a8")
 visibility_update_mode = 1
 script = ExtResource("2_qt2eu")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.9986739, 3.7252903e-09, 0.0514818, 0.045529336, 0.46677262, 0.88320464, -0.02403029, 0.88437736, -0.46615365, -1.1920929e-07, 22.888023, -9.710762)

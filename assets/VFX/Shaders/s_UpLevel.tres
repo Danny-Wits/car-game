@@ -80,7 +80,7 @@ default_value = Vector2(1, 1)
 
 [resource]
 code = "shader_type spatial;
-render_mode blend_mix, depth_draw_opaque, cull_disabled, diffuse_lambert, specular_schlick_ggx, unshaded, shadows_disabled;
+render_mode blend_mix, depth_draw_opaque, depth_test_default, cull_disabled, diffuse_lambert, specular_schlick_ggx, unshaded, shadows_disabled;
 
 uniform vec2 Texture_Scale = vec2(1.000000, 1.000000);
 uniform vec2 Texture_Speed = vec2(0.500000, 3.000000);

@@ -12,7 +12,7 @@ func _enter_tree() -> void:
 	set_multiplayer_authority(name.to_int())
 func _ready() -> void:	
 	name_label.text= Global.player_name if is_multiplayer_authority() else str(name)
-	$SpringArm3D/Camera3D.current=is_multiplayer_authority()
+	$Camera3D.current=is_multiplayer_authority()
 	set_physics_process(is_multiplayer_authority())
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
@@ -24,6 +24,10 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_pressed("forward"):
 		engine_force = accelaration
+		#if $VehicleWheel3D4.get_friction_slip() > 0.5 :
+			#for i in range(5):
+				#$VFX_puff_run.restart(true)
+
 	
 	else:
 		engine_force/=1.2
